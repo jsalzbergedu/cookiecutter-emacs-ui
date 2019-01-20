@@ -61,6 +61,7 @@
                   :command `("cookiecutter" ,choice)
                   :filter filter)))
 
+;;;###autoload
 (defun cookiecutter (choice)
   (interactive (list (cookiecutter-choose-cookiecutter)))
   (cookiecutter-run-cookiecutter choice))
